@@ -1,0 +1,31 @@
+/*----------EXAMPLES------------*/
+.filter {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 8px;
+  row-gap: 15px;
+  margin-bottom: 30px;
+  @media screen and(min-width:768px) {
+    justify-content: center;
+    margin-bottom: 50px;
+  }
+  &__btn {
+    font-family: inherit;
+    font-weight: 500;
+    line-height: 1.62;
+    text-align: center;
+    letter-spacing: 0.03em;
+    padding: 6px 22px;
+    background-color: var(--third-bcg-color);
+    color: var(--titles-color);
+    transition: color var(--transition-main),
+      background-color var(--transition-main), box-shadow var(--transition-main);
+    &:hover,
+    &:focus {
+      color: var(--first-font-btn-color);
+      background-color: var(--first-bcg-btn-color);
+      box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+        0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    }
+  }
+}

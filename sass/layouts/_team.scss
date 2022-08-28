@@ -1,0 +1,52 @@
+/*----------OUR TEAM-----------*/
+.team {
+  background-color: var(--third-bcg-color);
+  text-align: center;
+}
+// team cards
+.squad {
+  display: flex;
+  flex-wrap: wrap;
+  &__gap {
+    gap: 30px;
+  }
+  &__item {
+    width: 100%;
+    text-align: center;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+    background-color: var(--first-bcg-color);
+    @media screen and(min-width: 480px) {
+      width: 450px;
+    }
+    @media screen and(min-width:768px) {
+      width: calc((100% - 30px) / 2);
+    }
+    @media screen and(min-width:1200px) {
+      width: calc((100% - 90px) / 4);
+    }
+  }
+  &__thumb {
+    padding: 30px 15px 24px;
+
+    @media screen and(min-width:1200px) {
+      padding: 30px 15px;
+    }
+  }
+  &__subtitle {
+    margin-bottom: 10px;
+    font-weight: 500;
+    font-size: $subtitle-fs;
+    line-height: $subtitle-lh;
+    letter-spacing: $text-ls-main;
+    color: var(--titles-color);
+  }
+  &__text {
+    margin-bottom: 16px;
+    font-size: $subtitle-fs;
+    line-height: $subtitle-lh;
+    letter-spacing: $text-ls-main;
+    color: var(--text-color);
+  }
+}

@@ -1,0 +1,27 @@
+/* site-nav block */
+.site-nav__list {
+  gap: 50px;
+  display: none;
+  @media screen and(min-width:768px) {
+    display: flex;
+  }
+}
+
+.site-nav__link {
+  position: relative;
+  display: block;
+  font-weight: 500;
+  padding: 32px 0;
+  font-size: $link-fs-main;
+  line-height: $link-lh-main;
+  letter-spacing: $link-ls-main;
+  transition: color var(--transition-main);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+  &.current {
+    color: var(--accent-color);
+  }
+}

@@ -1,0 +1,24 @@
+.close-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: rotate(0deg);
+  transition: transform var(--transition-main), fill var(--transition-main);
+  width: 30px;
+  height: 30px;
+  background-color: var(--first-bcg-color);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.modal__btn {
+  position: absolute;
+  top: 8px;
+  right: 23px;
+  &:hover,
+  &:focus {
+    fill: var(--accent-color);
+    transform: rotate(45deg);
+  }
+}

@@ -1,0 +1,43 @@
+/*----------BASEMENT------------*/
+.basement {
+  text-align: center;
+  padding: 60px 0;
+  background-color: var(--sec-bcg-color);
+  &__block {
+    display: inline-block;
+    max-width: 232px;
+    @media screen and(max-width:1199px) {
+      margin-bottom: 60px;
+    }
+  }
+  &__logo {
+    margin-bottom: 20px;
+  }
+}
+
+// address block
+.address {
+  display: inline-block;
+  font-size: $text-fs-main;
+  line-height: $text-lh-main;
+  letter-spacing: $text-ls-main;
+  color: var(--light-titles-color);
+  &__basement {
+    margin-bottom: 8px;
+  }
+  &__item:not(:last-child) {
+    margin-bottom: 8px;
+  }
+  &__link {
+    display: inline-block;
+    font-size: $link-fs-main;
+    line-height: $link-lh-sec;
+    letter-spacing: $link-ls-sec;
+    color: var(--basement-contacts-color);
+    transition: color var(--transition-main);
+    &:hover,
+    &:focus {
+      color: var(--accent-color);
+    }
+  }
+}

@@ -1,0 +1,12 @@
+.button {
+  letter-spacing: 0.06em;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  border-radius: 4px;
+  cursor: pointer;
+  border: none;
+  color: var(--light-titles-color);
+  background-color: var(--first-bcg-btn-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}

@@ -1,0 +1,64 @@
+.pb-none {
+  padding-bottom: 0;
+}
+
+/* features card block */
+
+.features-cards {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+
+  &__gap {
+    gap: 30px;
+  }
+  &__item {
+    @media screen and(max-width: 767px) {
+      &:last-child {
+        padding-bottom: 60px;
+      }
+    }
+    @media screen and(min-width:768px) and (max-width: 1199px) {
+      &:nth-last-child(2) {
+        padding-bottom: 60px;
+      }
+    }
+
+    @media screen and(min-width: 480px) {
+      width: 450px;
+    }
+    @media screen and(min-width:768px) {
+      width: calc((100% - 30px) / 2);
+    }
+    @media screen and(min-width:1200px) {
+      width: calc((100% - 90px) / 4);
+    }
+  }
+  &__img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120px;
+    margin-bottom: 30px;
+    background-color: var(--third-bcg-color);
+    border-radius: 4px;
+  }
+  &__title {
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: $text-fs-main;
+    line-height: $text-lh-sec;
+    letter-spacing: $text-ls-main;
+    text-transform: uppercase;
+    color: var(--titles-color);
+    @media screen and(max-width:767px) {
+      text-align: center;
+    }
+  }
+  &__text {
+    font-size: $text-fs-main;
+    line-height: $text-lh-main;
+    letter-spacing: $text-ls-main;
+    color: var(--text-color);
+  }
+}
