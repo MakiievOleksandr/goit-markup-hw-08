@@ -10,11 +10,8 @@
 .site-nav__link {
   position: relative;
   display: block;
-  font-weight: 500;
+  @include fonts(500, $link-fs-main, $link-lh-main, $link-ls-main);
   padding: 32px 0;
-  font-size: $link-fs-main;
-  line-height: $link-lh-main;
-  letter-spacing: $link-ls-main;
   transition: color var(--transition-main);
 
   &:hover,

@@ -6,12 +6,12 @@
 @import "base/reset/img";
 @import "base/reset/address";
 @import "utils/visually-hidden";
+@import "utils/mixins";
 
 @import "components/title";
 @import "components/section";
 @import "components/container";
 @import "components/button";
-@import "components/box";
 @import "components/logo";
 @import "components/nav-site";
 @import "components/current";
@@ -34,3 +34,5 @@
 @import "components/modal-window";
 @import "components/modal-form";
 @import "components/checkbox";
+
+@import "layouts/contacts-page";

@@ -34,16 +34,12 @@
 .contacts__link {
   display: flex;
   align-items: center;
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 1.17;
-  letter-spacing: $link-ls-main;
+  @include fonts(500, 12px, 1.17, $link-ls-main);
 
   color: var(--text-color);
   transition: color var(--transition-main);
   @media screen and(min-width:1200px) {
-    font-size: $link-fs-main;
-    line-height: $link-lh-main;
+    @include fonts(null, $link-fs-main, $link-lh-main, null);
   }
 
   &:hover,
@@ -64,14 +60,5 @@
     &.tel {
       height: 16px;
     }
-  }
-}
-
-.menu-open {
-  padding: 0;
-  background-color: transparent;
-  border: none;
-  @media screen and(min-width: 768px) {
-    display: none;
   }
 }

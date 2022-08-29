@@ -11,13 +11,12 @@
   }
   &__btn {
     font-family: inherit;
-    font-weight: 500;
-    line-height: 1.62;
+    @include fonts(500, null, 1.62, 0.03em);
     text-align: center;
-    letter-spacing: 0.03em;
     padding: 6px 22px;
     background-color: var(--third-bcg-color);
     color: var(--titles-color);
+    box-shadow: none;
     transition: color var(--transition-main),
       background-color var(--transition-main), box-shadow var(--transition-main);
     &:hover,

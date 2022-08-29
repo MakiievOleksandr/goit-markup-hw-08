@@ -45,10 +45,7 @@
   }
   &__title {
     margin-bottom: 10px;
-    font-weight: 700;
-    font-size: $text-fs-main;
-    line-height: $text-lh-sec;
-    letter-spacing: $text-ls-main;
+    @include fonts(700, $text-fs-main, $text-lh-sec, $text-ls-main);
     text-transform: uppercase;
     color: var(--titles-color);
     @media screen and(max-width:767px) {
@@ -56,9 +53,7 @@
     }
   }
   &__text {
-    font-size: $text-fs-main;
-    line-height: $text-lh-main;
-    letter-spacing: $text-ls-main;
+    @include fonts(null, $text-fs-main, $text-lh-main, $text-ls-main);
     color: var(--text-color);
   }
 }

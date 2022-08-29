@@ -36,17 +36,12 @@
   }
   &__subtitle {
     margin-bottom: 10px;
-    font-weight: 500;
-    font-size: $subtitle-fs;
-    line-height: $subtitle-lh;
-    letter-spacing: $text-ls-main;
+    @include fonts(500, $subtitle-fs, $subtitle-lh, $text-ls-main);
     color: var(--titles-color);
   }
   &__text {
     margin-bottom: 16px;
-    font-size: $subtitle-fs;
-    line-height: $subtitle-lh;
-    letter-spacing: $text-ls-main;
+    @include fonts(null, $subtitle-fs, $subtitle-lh, $text-ls-main);
     color: var(--text-color);
   }
 }

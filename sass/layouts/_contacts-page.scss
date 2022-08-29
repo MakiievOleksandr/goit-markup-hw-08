@@ -1,0 +1,16 @@
+.map-link {
+  display: block;
+  @include fonts(500, 18px, 1.18, 0.02em);
+  @media screen and (min-width: 400px) {
+    @include fonts(500, 24px, 1.18, 0.02em);
+  }
+}
+
+.map {
+  width: 100%;
+  height: 40vh;
+  display: block;
+  padding: 0;
+  margin-left: auto;
+  margin-right: auto;
+}

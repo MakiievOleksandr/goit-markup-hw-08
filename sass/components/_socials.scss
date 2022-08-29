@@ -40,10 +40,7 @@
     margin: 0 auto 60px auto;
   }
   &__title {
-    font-weight: 700;
-    font-size: $text-fs-main;
-    line-height: $text-lh-sec;
-    letter-spacing: $text-ls-main;
+    @include fonts(700, $text-fs-main, $text-lh-sec, $text-ls-main);
     text-transform: uppercase;
     margin-bottom: 20px;
     color: var(--light-titles-color);

@@ -1,10 +1,7 @@
 /* ---------BASEMENT FORM --------- */
 .footer-form__title {
   margin-bottom: 20px;
-  font-weight: 700;
-  font-size: $text-fs-main;
-  line-height: $text-lh-sec;
-  letter-spacing: $text-ls-main;
+  @include fonts(700, $text-fs-main, $text-lh-sec, $text-ls-main);
   text-transform: uppercase;
   color: var(--light-titles-color);
 }
